@@ -16,7 +16,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'rubik', 'arial', sans-serif;
-    font-style: 16px;
+    font-size: 16px;
     line-height: 22px;
     background-color: #ffffff;
     color: #4A4B4C;
@@ -38,3 +38,115 @@ img{
     margin-right: auto;
 }
 
+/*SITE HEADER*/
+.site-header{
+
+}
+/*SITE HEADER top*/
+.site-header-top{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f6f6f6;
+
+}
+
+.site-header-top-container{
+    display: flex;
+    align-items: center;
+
+}
+
+/*SITE HEADER LOGO*/
+.site-header-logo{
+    display: flex;
+    padding: 8px 6px;
+    margin-right: 35px;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+
+.site-header-logo:hover{
+    opacity: 0.8;
+}
+
+.site-header-logo:active{
+    opacity: 0.5;
+}
+
+/*CURRENCY-RATES*/
+.currency-rates{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-right: auto; 
+}
+
+.currency-rates-item:first-child{
+    margin-right: 25px;
+
+}
+
+.currency-rates-type{
+    color: #2959CE;
+
+}
+
+/*lang toggle*/
+.lang-toggle{
+    display: flex;
+    padding: 3px;
+    margin-right: 25px;
+    border-radius: 39px;
+    background-color: #DCE6FF;
+
+
+}
+
+.lang-toggle-link{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 30px;
+    color: #a6a6a6;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.lang-toggle-link-active{
+    background-color: #fff;
+    color : #000;
+
+}
+
+.button{
+    display: inline-block;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    padding: 13px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.button-primary{
+    background-color: #7296EC;
+    color: #fff;
+
+}
+
+.button-primary:hover{
+    opacity: 0.8;
+
+}
+
+.button-primary:active{
+    opacity: 0.6;
+
+}
