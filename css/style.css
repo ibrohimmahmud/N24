@@ -29,6 +29,10 @@ img{
 
 }
 
+*:focus{
+    outline: 2px dashed #7296EC;
+}
+
 .container{
     width: 100%;
     max-width: 1240px;
@@ -90,6 +94,36 @@ img{
 
 .currency-rates-type{
     color: #2959CE;
+
+}
+
+.global-search-form{
+    margin-right: 25px;
+
+}
+/*
+.global-search-form-button{
+    padding: 0;
+    border: 0;
+    background-color: #fff;
+}
+
+.global-search-form-img{
+
+    display: flex;
+}
+*/
+.global-search-form-input{
+    font-size: 14px;
+    line-height: normal;
+    border: 0;
+    background-color: #fff;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 40px;
+    border-radius: 60px;
+
 
 }
 
