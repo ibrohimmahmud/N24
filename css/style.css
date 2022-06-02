@@ -51,6 +51,7 @@ img{
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #f6f6f6;
+    margin-bottom: 10px;
 
 }
 
@@ -183,4 +184,65 @@ img{
 .button-primary:active{
     opacity: 0.6;
 
+}
+
+.site-header-nav-container{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+.site-header-nav-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #D1D1D1;
+    
+}
+
+.site-header-nav-item{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+
+.site-header-nav-item:not(:last-child){
+    margin-right: 34px;
+
+}
+
+.site-header-nav-link{
+    display: inline-block;
+    text-decoration: none;
+    color: #7f7f7f;
+    
+    
+}
+
+.site-header-nav-link:hover{
+    color: #7296EC;
+
+}
+
+.site-header-nav-link:active{
+    opacity: 0.6;
+
+}
+
+.header-banner{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.header-banner-link{
+    display: flex;
+}
+
+.header-banner-img{
+    border-radius: 8px;
 }
