@@ -327,20 +327,20 @@ img{
 
 }
 
-.article-card-group{
+.site-card-group{
     display: flex;
     align-items: center;
 
 }
 
-.article-card-ava{
+.site-mini-ava{
     display: block;     
     margin-right: 10px;
     border-radius: 5px;
 
 }
 
-.article-card-ava-text{
+.site-mini-text{
     margin: 0;
     font-style: normal;
     font-weight: 400;
@@ -379,5 +379,141 @@ img{
     line-height: 26px;
     color: #000;
     margin-right: auto;
+}
+
+/*roster*/
+
+
+.site-roster-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    margin: 0;
+    margin-bottom: 20px;
+
+}
+
+.roster-case{
+    display: flex;
+
+}
+
+.site-roster-list{
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: -10px;
+}
+
+.site-roster-item{
+    width: 797px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    padding: 17px 20px 20px;
+    margin-bottom: 10px;
+}
+
+.site-roster-img{
+    width: 210px;
+    height: 165px;
+    display: block;
+    margin-right: 15px;
+}
+
+.site-roster-text-box{
+    width: 535px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 17px;
+
+}
+
+.site-roster-box-title{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+
+}
+
+.site-roster-box-link{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000;
+
+}
+
+.site-roster-box-topic{
+    font-weight: 400;
+    margin: 0;
+
+}
+
+.button-roster-item{
+    padding: 0;
+    background-color: #aeaeae;
+}
+
+.button-more{
+    margin: auto;
+    padding: 17px 343px;
+    background-color: #f6f6f6;
+    color: #000;
+}
+
+/*roster-rectangle*/
+.roster-rectangle{
+    width: 393px;
+    background-color: #f6f6f6;
+    padding: 20px 20px 25px 17px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    
+}
+
+.rectangle-title{
+    margin-bottom: 25px;
+    
+}
+
+.site-rectangle-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.site-rectangle-item{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d2d2d2
+}
+
+.site-rectangle-subtitle{
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.site-rectangle-mini-text{
+    font-size: 13px;
+    line-height: 15px;
+    
+}
+
+.site-rectangle-img{
+    display: block;
+    border-radius: 15px;
+
 }
 
