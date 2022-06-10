@@ -57,6 +57,11 @@ img{
 
 }
 
+.button-block{
+    display: block;
+    width: 100%;
+}
+
 .button-primary{
     background-color: #7296ec;
     color: #fff;
@@ -257,7 +262,7 @@ img{
 
 .main{
     flex-grow: 1;
-
+    padding-bottom: 100px;
 }
 
 .news-grid{
@@ -340,7 +345,7 @@ img{
 
 }
 
-.site-mini-text{
+.site-news-card-course-time{
     margin: 0;
     font-style: normal;
     font-weight: 400;
@@ -367,7 +372,7 @@ img{
     width: 1050px;
     margin: 60px 75px;
     padding: 24px 70px 24px 24px;
-    background-color: #fcb462;
+    background-color: #ffc9a1;
     border-radius: 10px;
 }
 
@@ -382,7 +387,9 @@ img{
 }
 
 /*roster*/
-
+.roster{
+    display: flex;
+}
 
 .site-roster-title{
     font-style: normal;
@@ -395,25 +402,25 @@ img{
 
 }
 
-.roster-case{
-    display: flex;
 
-}
 
 .site-roster-list{
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     margin-right: 10px;
     margin-bottom: -10px;
+    
 }
 
 .site-roster-item{
     width: 797px;
     display: flex;
-    align-items: center;
+    align-items: start;
     margin: 0;
     background-color: #f6f6f6;
-    border-radius: 15px;
+    border-radius: 15px;    
     padding: 17px 20px 20px;
     margin-bottom: 10px;
 }
@@ -421,11 +428,15 @@ img{
 .site-roster-img{
     width: 210px;
     height: 165px;
+    object-fit: cover;
     display: block;
     margin-right: 15px;
 }
 
-.site-roster-text-box{
+.site-roster-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     width: 535px;
     margin: 0;
     padding: 0;
@@ -433,14 +444,14 @@ img{
 
 }
 
-.site-roster-box-title{
+.site-roster-content-title{
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
 
 }
 
-.site-roster-box-link{
+.site-roster-content-link{
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
@@ -450,7 +461,17 @@ img{
 
 }
 
-.site-roster-box-topic{
+.site-roster-content-link:hover{
+    color:#7296ec
+
+}
+
+.site-roster-content-link:active{
+    opacity: 0,6;
+
+}
+
+.site-roster-content-topic{
     font-weight: 400;
     margin: 0;
 
@@ -459,21 +480,31 @@ img{
 .button-roster-item{
     padding: 0;
     background-color: #aeaeae;
+
 }
 
 .button-more{
     margin: auto;
-    padding: 17px 343px;
+    padding: 17px;
     background-color: #f6f6f6;
     color: #000;
+
+}
+
+.global-news-rectangle{
+    width: 393px;
+    margin-top: 49px;
 }
 
 /*roster-rectangle*/
 .roster-rectangle{
-    width: 393px;
     background-color: #f6f6f6;
     padding: 20px 20px 25px 17px;
     border-radius: 15px;
+    
+}
+
+.layout-2-1-item:not(:last-child){
     margin-bottom: 10px;
     
 }
@@ -486,23 +517,44 @@ img{
 .site-rectangle-list{
     margin: 0;
     padding: 0;
-    list-style: none;
     
 }
 
-.site-rectangle-item{
+.site-rectangle-item:not(:first-child){
+    padding-top: 20px;
+
+}
+
+.site-rectangle-item:not(:last-child){
     padding-bottom: 20px;
     border-bottom: 1px solid #d2d2d2
 }
 
 .site-rectangle-subtitle{
     margin: 0;
+    margin-bottom: 8px;
+
+}
+
+.site-rectangle-link{
+    display: inline-block;
     font-style: normal;
+    text-decoration: none;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     color: #000;
-    margin-bottom: 8px;
+
+}
+
+.site-rectangle-link:hover{
+    color:#7296ec
+
+}
+
+.site-rectangle-link:active{
+    opacity: 0,6;
+
 }
 
 .site-rectangle-mini-text{
@@ -511,9 +563,52 @@ img{
     
 }
 
+.site-rectangle-ad-link{
+    display: flex;
+}
+
 .site-rectangle-img{
+    width: 393px;
+    height: 338px;
+    object-fit: cover;
     display: block;
     border-radius: 15px;
 
 }
 
+/*footer*/
+.site-footer{
+    background-color: #7297ef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.footer-box{
+    width: 1000px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.footer-logo{
+    display: block;
+    margin-bottom: 15px;
+
+}
+
+.footer-article{
+    display: flex;
+
+}
+
+.site-footer-text{
+    width: 230px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    margin: 0;  
+
+}
