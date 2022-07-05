@@ -1,6 +1,40 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Bold.woff2') format('woff2'),
+        url('Rubik-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Regular.woff2') format('woff2'),
+        url('Rubik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Medium.woff2') format('woff2'),
+        url('Rubik-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --brand-color: #7297ec;
+    --outline-color: var(--brand-color);
+    --width-haight: 100%;
+    --site-font: 'Rubik', 'arial', sans-serif;
+}
+
 html{
     box-sizing: border-box;
-    height: 100%;
+    height: var(--width-haight);
     scroll-behavior: smooth;
 
 }
@@ -12,15 +46,13 @@ html{
 
 }
 
-
-
 body{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: var(--width-haight);
     margin: 0;
     padding: 0;
-    font-family: 'Rubik', 'arial', sans-serif;
+    font-family: var(--site-font);
     font-size: 16px;
     line-height: 22px;
     background-color: #ffffff;
@@ -29,13 +61,13 @@ body{
 }
 
 img{
-    max-width: 100%;
+    max-width: var(--width-haight);
     height: auto;
 
 }
 
 *:focus{
-    outline: 2px dashed #7296ec;
+    outline: 2px dashed var(--outline-color);
     outline-offset: 3px;
 
 }
@@ -66,11 +98,11 @@ img{
 
 .button-block{
     display: block;
-    width: 100%;
+    width: var(--width-haight);
 }
 
 .button-primary{
-    background-color: #7296ec;
+    background-color: var(--brand-color);
     color: #fff;
 
 }
@@ -85,14 +117,14 @@ img{
 }
 
 .button-blue{
-    background-color: #7296ec;
+    background-color: var(--brand-color);
     color: #fff;
     padding: 17px 30px;
 
 }
 
 .container{
-    width: 100%;
+    width: var(--width-haight);
     max-width: 1240px;
     padding-left: 20px;
     padding-right: 20px;
@@ -100,9 +132,6 @@ img{
     margin-right: auto;
     
 }
-
-/*SITE HEADER*/
-
 
 /*SITE HEADER top*/
 .site-header-top{
@@ -267,7 +296,7 @@ img{
 }
 
 .site-header-nav-link:hover{
-    color: #7296ec;
+    color: var(--brand-color);
 
 }
 
@@ -331,7 +360,7 @@ img{
 }
 
 .article-card-link:hover{
-    color:#7296ec;
+    color:var(--brand-color);
 
 }
 
@@ -493,7 +522,7 @@ img{
 }
 
 .site-roster-content-link:hover{
-    color:#7296ec
+    color:var(--brand-color)
 
 }
 
@@ -579,7 +608,7 @@ img{
 }
 
 .site-rectangle-link:hover{
-    color:#7296ec
+    color:var(--brand-color)
 
 }
 
@@ -600,7 +629,7 @@ img{
 
 .site-rectangle-img{
     width: 393px;
-    height: 100%;
+    height: var(--width-haight);
     object-fit: cover;
     display: block;
     border-radius: 15px;
@@ -616,8 +645,8 @@ img{
 
 }
 
-.site-footer *:focus{
-    outline: 2px dashed #fff;
+.site-footer{
+    --outline-color: #ffffff;
 
 }
 
@@ -820,7 +849,7 @@ img{
 
 .form-input{
     display: block;
-    width: 100%;
+    width: var(--width-haight);
     padding: 18px 20px;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.2)
@@ -836,7 +865,7 @@ img{
 
 .form-textarea{
     display: block;
-    width: 100%;
+    width: var(--width-haight);
     min-height: 180px;
     margin-bottom: 20px;
     resize: none;
@@ -890,4 +919,5 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
 
+    
 }
